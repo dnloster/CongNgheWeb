@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Quy chế hoạt động";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/css/gioithieu.css" media="all" />
+
+
+<div class="container-fluid banner" style="padding: 0;">
+    <!-- content -->
+    <div class="container">
+        <div class="row" id="mn">
+            <div class="col-md-3">
+                @Html.Partial("sideBar")
+                <style>
+                    .banner .row .col-md-3 .nav li:nth-child(3) a {
+                        color: orange !important;
+                        font-weight: bold
+                    }
+                </style>
+            </div>
+            <div class="col-md-9">
+                <h3>QUY CHẾ HOẠT ĐỘNG CỦA SÀN GIAO DỊCH THƯƠNG MẠI ĐIỆN TỬ MYTOUR.VN</h3><br />
+                <p>Mytour.vn là Sàn giao dịch thương mại điện tử phục vụ thương nhân, tổ chức, các nhân có nhu cầu thực hiện đăng bán các dịch vụ đặt phòng khách sạn, tour du lịch, xe du lịch, bán vé máy bay.</p>
+                <p>Sứ mệnh mà Mytour.vn hướng tới là sẽ trở thành Sàn giao dịch thương mại điện tử  tin cậy trong thị trường Thương mại điện tử và là cầu nối thương mại giữa nhà cung cấp dịch vụ về khách sạn và du lịch đến với thành viên.</p><br />
+                <p style="font-weight: bolder;">I.   Nguyên tắc chung</p><br />
+                <p>Sàn  giao dịch  thương mại  điện tử  Mytour.vn  do  VNTravel Group  (Công ty) thực hiện hoạt động và vận hành. Thành viên trên Sàn giao dịch thương mại điện tử Mytour.vn là các thương nhân, tổ chức, cá nhân có hoạt động thương mại hợp pháp trong lĩnh vực khách sạn, du lịch được Mytour.vn chính thức công nhận và được phép sử dụng dịch vụ do Sàn giao dịch thương mại điện tử Mytour.vn và các bên liên quan cung cấp.</p><br />
+                <p style="font-weight: bolder;">II.  Quy định chung</p><br />
+                <p style="font-weight: bolder; font-style: italic;">1.  Định nghĩa</p>
+                <p>-     Nhà cung cấp, đối tác (NCC): Là thương nhân, tổ chức, cá nhân cung cấp dịch vụ khách sạn và du lịch thông qua hình thức đăng bán tại website Mytour.vn.</p>
+                <p>-     Thành viên (Khách hàng - KH): Là khách hàng có nhu cầu mua các dịch vụ của NCC và phải tiến hành lập tài khoản tại Mytour.vn.</p>
+                <p style="font-weight: bolder; font-style: italic;">2.  Quy định chung</p>
+                <p>-     Thành viên tham gia giao dịch tại Sàn giao dịch thương mại điện tử Mytour.vn tự do lựa chọn những dịch vụ mà NCC đăng bán thông qua hình thức đặt phòng online, không trái với qui định của pháp luật.</p>
+                <p>-     Dịch vụ khách sạn và du lịch được NCC cung cấp trên Sàn giao dịch thương mại điện tử Mytour.vn phải đáp ứng đầy đủ các quy định của pháp luật có liên quan, không thuộc các trường hợp cấm kinh doanh, cấm quảng cáo theo quy định của pháp luật.</p>
+                <p>-     Hoạt động mua bán dịch vụ thông qua Sàn giao dịch thương mại điện tử Mytour.vn phải được thực hiện công khai, minh bạch, đảm bảo quyền lợi của Thành viên.</p>
+                <p>-     Các thông tin mà khách hàng đăng ký là thành viên của Sàn giao dịch thương mại điện tử Mytour.vn phải chính xác, đầy đủ theo quy định của Công ty.</p>
+                <p>-     Tất cả các nội dung trong Quy định này phải tuân thủ theo hệ thống pháp luật hiện hành của Việt Nam. Thành viên khi tham gia vào Sàn giao dịch thương mại điện tử Mytour.vn phải tự tìm hiểu trách nhiệm pháp lý của mình đối với luật pháp hiện hành của Việt Nam và cam kết thực hiện đúng những nội dung trong Quy chế của Sàn giao dịch thương mại điện tử Mytour.vn.</p>
+                <p style="font-weight: bolder;">III. Quy trình giao dịch</p><br />
+                <p style="font-weight: bolder; font-style: italic;">1. Quy trình mua hàng trên Mytour.vn</p>
+                <p>Khi có nhu cầu mua dịch vụ trên Mytour.vn thành viên nên thực hiện theo các bước sau đây:</p>
+                <p>-   Tìm kiếm, tham khảo thông tin dịch vụ và các nhà cung cấp dịch vụ mà thành viên đang quan tâm.</p>
+                <p>-   Tham khảo thông tin giá và chính sách, điều kiện thực hiện của NCC mà thành viên đang có nhu cầu mua.</p>
+                <p>-   Dựa trên thông tin tham khảo được từ bên NCC đăng tải tại Mytour.vn, thành viên tiến hành theo các bước sau.</p>
+                <p>-   Thanh toán trực tiếp trên website Mytour.vn click vào nút “Đặt phòng”; Đăng nhập bằng tài khoản thành viên (Điền đầy đủ thông tin của khách hàng); Chọn hình thức thanh toán; Xác nhận lại đơn hàng; Gửi đơn đặt hàng.</p>
+                <p>-   Đối với việc đặt Tour du lịch thì người mua sẽ liên hệ trực tiếp đến thông tin liên hệ của Nhà cung cấp hoặc số hotline của công ty để được tư vấn về các dịch vụ.</p>
+                <p>-   Sau khi nhận được đơn đặt hàng ban quản trị website Mytour.com xác nhận lại đơn hàng với thành viên.</p>
+                <p>-   Thành viên nhận xác nhận đặt phòng khách sạn, tour du lịch.</p>
+                <p>-   Thành viên thắc mắc, khiếu nại về chất lượng của sản phẩm, dịch vụ (nếu có).</p>
+                <p style="font-weight: bolder; font-style: italic;">2. Quy trình dành cho người NCC</p>
+                <p>-    Bước 1: đàm phán và ký hợp đồng đối tác với chủ website Mytour.vn.</p>
+                <p>-    Bước 2: nhà cung cấp gửi các nội dung dịch vụ cho chủ website Mytour.vn để tiến hành đăng tải trên Mytour.vn.</p>
+                <p>-    Bước 3: Chủ website Mytour.vn chuyển các đơn hàng cho nhà cung cấp hoặc trực tiếp nhận đơn hàng và giao hàng.</p>
+                <p>-    Bước 4: Đối chiếu, thanh toán đơn hàng với Chủ website Mytour.vn.</p>
+                <p>Nhà cung cấp phải có trách nhiệm cung cấp thông tin chính xác về dịch vụ của mình đăng bán và phải cập nhập thường xuyên số lượng còn trống.</p>
+                <p>Thực hiện đúng các cam kết đối với dịch vụ mà khách hàng đã mua.</p>
+                <p style="font-weight: bolder; font-style: italic;">3. Quy trình vận chuyển, giao nhận</p>
+                <p>Công ty sẽ gửi xác nhận đơn đặt hàng của khách hàng qua email (thư điện tử), qua tin nhắn hoặc bàn giao trực tiếp tại văn phòng Công ty tại hai địa chỉ:</p>
+                <p>-     Tp. Hồ Chí Minh: Tp. Hồ Chí Minh</p>
+                <p>-     Tp. Hà Nội: Tầng 11 tòa nhà Peak View, 36 Hoàng Cầu, Đống Đa, Hà Nội</p>
+                <p>Công ty chưa cung cấp dịch vận chuyển, giao nhận tại địa chỉ mà khách hàng yêu cầu.</p>
+                <p style="font-weight: bolder; font-style: italic;">4. Quy trình và chính sách hủy dịch vụ</p>
+                <p>Khách hàng liên hệ với Mytour.vn bằng bất kỳ cách nào dưới đây:</p>
+                <p>+ Website: www.Mytour.vn</p>
+                <p>+ Gọi điện:</p>
+                <p>+ Email:</p>
+                <br /><br />
+            </div>
+        </div>
+    </div>
+</div>

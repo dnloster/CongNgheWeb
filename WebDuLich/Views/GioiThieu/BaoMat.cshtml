@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Chính sách bảo mật";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/css/gioithieu.css" media="all" />
+
+<div class="container-fluid banner" style="padding: 0;">
+    <!-- content -->
+    <div class="container">
+        <div class="row" id="mn">
+            <div class="col-md-3">
+                @Html.Partial("sideBar")
+                <style>
+                    .banner .row .col-md-3 .nav li:nth-child(5) a {
+                        color: orange !important;
+                        font-weight: bold
+                    }
+                </style>
+            </div>
+            <div class="col-md-9">
+                <h3>Chúng tôi bảo mật thông tin thẻ tín dụng của bạn như thế nào?</h3><br />
+                <p>Chúng tôi cam kết bảo mật thông tin thẻ tín dụng của bạn.</p>
+                <p>Khi bạn nhấn vào nút “Đặt Phòng” chúng tôi sẽ sử dụng kỹ thuật SSL (Secure Sockets Layer) dùng mã hoá kết nối thẻ của bạn với hệ thống thanh toán. Bạn sẽ được thông báo bằng biểu tượng khóa ở header hay footer của trình duyệt. Công Nghệ bảo mật SSL đảm bảo bất kỳ thông tin nào được cung cấp sẽ được mã hóa trước khi nó được gửi đi. Nó được biến đổi liên tục với 300,000,000,000,000,000,000,000,000 (300 ngàn triệu triệu số) sự kết hợp khác nhau. Dữ liệu đã mã hoá này sẽ không thể đọc được bởi bên thứ ba khi được truyền qua Internet.</p>
+                <p>Chúng tôi không thực hiện truyền dữ liệu thẻ tín dụng qua Internet cho đến khi bạn thực hiện đặt phòng thành công, chúng tôi không chia sẻ thông tin cho bất kỳ ai, thậm chí những nơi mà bạn đã thực hiện đặt phòng.</p>
+                <p>Mytour.vn đã được xác nhận bằng chữ ký số từ hội đồng xác nhận "", là một trong những đơn vị  đứng đầu công nghệ bảo mật và quản lý dữ liệu giao dịch.</p>
+                <p style="font-weight: bolder;">Đặt phòng qua điện thoại:</p>
+                <p>Lưu ý bạn có thể liên hệ với Trung Tâm Chăm Sóc Khách Hàng 1900 2083, nếu bạn cảm thấy thoải mái khi cung cấp thông tin thẻ tín dụng qua điện thoại.</p>
+                <p>Để biết thêm chi tiết xin liên hệ chúng tôi nếu bạn muốn biết bất kỳ thông tin nào về việc bảo vệ thông tin cá nhân. Hoặc bạn có thể đọc thêm chính sách riêng tư.</p>
+                <br /><br />
+            </div>
+        </div>
+    </div>
+</div>
+

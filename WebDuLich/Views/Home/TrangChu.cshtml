@@ -1,0 +1,218 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<link rel="stylesheet" href="~/Content/css/trangchu.css" media="all" />
+
+<!-- Slider -->
+<div class="container-fluid" style="height: 100%; padding: 0;">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="~/Content/img/tour/4c444a13b93175f397def85e90bf6981.jpg" alt="Los Angeles" style="width:100%; height:500px; object-fit: cover">
+            </div>
+            <div class="item">
+                <img src="~/Content/img/tour/photo-1501785888041-af3ef285b470.jpg" alt="Chicago" style="width:100%; height:500px; object-fit: fill">
+            </div>
+            <div class="item">
+                <img src="~/Content/img/tour/photo-1476514525535-07fb3b4ae5f1.jpg" alt="New York" style="width:100%; height:500px; object-fit: fill">
+            </div>
+            <!-- Key word -->
+            <div class="key_word">
+                <h3 style="color: #fff;">CÁC CHUYẾN ĐI TUYỆT NHẤT CHO NGÀY NGHỈ</h3>
+                <h5 style="color: #fff;">Địa điểm chất lượng - dịch vụ chu đáo</h5>
+                <ul class="nav nav-tabs" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <li class="active"><a data-toggle="tab" href="#home" style="color: #fff">Tour</a></li>
+                </ul>
+                <div class="tab-content" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <div id="home" class="tab-pane fade in active">
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                               aria-describedby="search-addon" />
+                        <button class="btn-search glyphicon glyphicon-search"></button>
+                        <div class="key-word">
+                            <span class="word" style="color: #fff">Từ khoá thu hút nhất</span>
+                            <button class="key-position">tour phú quốc</button>
+                            <button class="key-position">chùa nha trang</button>
+                            <button class="key-position">tour hà nội</button>
+                            <button class="key-position">tour hè</button>
+                            <button class="key-position">tour ninh bình</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<!-- Tour nổi bật -->
+<div class="container outstanding-tour">
+    <div class="title">
+        <div class="dash"></div>
+        <h3 class="text-center">Tour nổi bật</h3>
+    </div>
+    <div class="container tour-list" style="padding: 0">
+        <div class="layout-item">
+            <img src="~/Content/img/tour/PhuQuoc.png" alt="">
+        </div>
+        <div class="layout-item">
+            <img src="~/Content/img/tour/NhaTrang.jpg" alt="">
+        </div>
+        <div class="layout-item">
+            <img src="~/Content/img/tour/BaNaHill.jpg" alt="">
+        </div>
+        <div class="layout-item">
+            <img src="~/Content/img/tour/PhuQuy.jpg" alt="">
+        </div>
+        <div class="layout-item">
+            <img src="~/Content/img/tour/DamLong.jpg" alt="">
+        </div>
+        <div class="layout-item">
+            <img src="~/Content/img/tour/NhaTrang.png" alt="">
+        </div>
+        <div class="layout-item">
+            <img src="~/Content/img/tour/DiepSon.png" alt="">
+        </div>
+        <div class="layout-item">
+            <img src="~/Content/img/tour/PhuQuoc2.jpg" alt="">
+        </div>
+        <div class="layout-item">
+            <img src="~/Content/img/tour/TraiHe.png" alt="">
+        </div>
+        <div class="layout-item">
+            <div class="layout-item_overlay-left"></div>
+            <div class="layout-item_overlay-right"></div>
+            <div class="text-overlay">Xem tất cả</div>
+            <img src="~/Content/img/tour/All.jpeg" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- Ưu đãi trọn gói -->
+<div class="container-fluid endow">
+    <div class="container title">
+        <div class="dash"></div>
+        <h3 class="text-center">Ưu đãi trọn gói</h3>
+    </div>
+    <div class="container list-cards">
+        <div class="card">
+            <img src="~/Content/img/tour/105c8ae8fe9c1b71924b2c50922903a3.jpg" alt="Card image cap" class="card-img-top">
+            <div class="card-content">
+                <div class="card-body">
+                    <h5 class="card-title">Khách sạn Novotel Hà Nội Thái Hà</h5>
+                    <p class="card-text">2 Thái Hà, Đống Đa, Hà Nội</p>
+                </div>
+                <div class="card-footer">
+                    <span class="card-money">Từ <span style="color: #ed407a">999,000 ₫</span></span>
+                    <button class="btn btn-primary" style="float: right;">Đặt mua</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="~/Content/img/tour/587effc0256cc503b52039ffe94da0e8.jpg" alt="Card image cap" class="card-img-top">
+            <div class="card-content">
+                <div class="card-body">
+                    <h5 class="card-title">Legacy Yên Tử MGallery</h5>
+                    <p class="card-text">Thượng Công, Uông Bí, Quảng Ninh</p>
+                </div>
+                <div class="card-footer">
+                    <span class="card-money">Từ <span style="color: #ed407a">2,688,000 ₫</span></span>
+                    <button class="btn btn-primary" style="float: right;">Đặt mua</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="~/Content/img/tour/d02ee58c790183b568bb5baba93e3678.jpg" alt="Card image cap" class="card-img-top">
+            <div class="card-content">
+                <div class="card-body">
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="right" title="Khách sạn Vinpearl Resort and Spa Hạ Long">Khách sạn Vinpearl Resort and Spa Hạ Long</h5>
+                    <p class="card-text" data-toggle="tooltip" data-placement="right" title="Đảo Rều, Thành phố Hạ Long, Quảng Ninh">Đảo Rều, Thành phố Hạ Long, Quảng Ninh</p>
+                </div>
+                <div class="card-footer">
+                    <span class="card-money">Từ <span style="color: #ed407a">1,588,000 ₫</span></span>
+                    <button class="btn btn-primary" style="float: right;">Đặt mua</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="~/Content/img/tour/c8f723ffa7a5dde295c2c848434ebcf5.jpg" alt="Card image cap" class="card-img-top">
+            <div class="card-content">
+                <div class="card-body">
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="right" title="Khách Sạn Fortuna Hà Nội - Gói Trung Cấp 4*">Khách Sạn Fortuna Hà Nội - Gói Trung Cấp 4*</h5>
+                    <p class="card-text" data-toggle="tooltip" data-placement="right" title="6B Láng Hạ, Thành Công, Ba Đình, Hà Nội">6B Láng Hạ, Thành Công, Ba Đình, Hà Nội</p>
+                </div>
+                <div class="card-footer">
+                    <span class="card-money">Từ <span style="color: #ed407a">1,045,000 ₫</span></span>
+                    <button class="btn btn-primary">Đặt mua</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Đối tác -->
+<div class="container-fluid partners">
+    <div class="container title">
+        <div class="dash"></div>
+        <h3 class="text-center">ĐỐI TÁC</h3>
+    </div>
+    <div class="wrapper-partners">
+        <div class="hegaxon-img">
+            <img src="~/Content/img/tour/flc.png" alt="">
+            <img src="~/Content/img/tour/vinpearl.png" alt="">
+            <img src="~/Content/img/tour/pan_pacific.png" alt="">
+            <img src="~/Content/img/tour/muongthanh.png" alt="">
+            <img src="~/Content/img/tour/flamingo.png" alt="">
+            <img src="~/Content/img/tour/ionetour.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact -->
+<div class="container-fluid contact">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="text-center" style="font-weight: 500; color: #00b5f2;">Liên hệ nhận ưu đãi</h2>
+        </div>
+        <div class="modal-body">
+            <form>
+                <select class="form-control">
+                    <option>Địa Điểm Tổ Chức Sự Kiện, Tiệc Cưới, Hội Nghị</option>
+                    <option>Gói Âm Thanh, Ánh Sáng và Màn Hình LED</option>
+                    <option>Gói MC Dẫn Chương Trình và Game Sân Khấu</option>
+                    <option>Gói Quay Chụp Sự Kiện</option>
+                    <option>Gói Teambuilding Doanh Nghiệp và Học Sinh</option>
+                    <option>Gói Teambuilding Amazing Race</option>
+                </select>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder=" ">
+                    <label for="usr">Địa điểm</label>
+                    <i class="fas fa-map-marker-alt field-icon"></i>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder=" ">
+                    <label for="usr">Số điện thoại</label>
+                    <i class="fas fa-phone field-icon"></i>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer" style="text-align: center">
+            <button class="btn" id="myBtn" onclick="javascript:alert('Hello World!')">Gửi yêu cầu</button>
+        </div>
+    </div>
+</div>

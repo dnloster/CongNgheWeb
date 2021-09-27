@@ -1,0 +1,297 @@
+.banner {
+  padding: 0;
+  height: 100%;
+}
+.banner > img {
+  width: 100%;
+  height: 560px;
+}
+
+.form-control:focus {
+  border-color: #ec0072;
+  box-shadow: 0 0 4px #ca2c79;
+}
+
+.wrapper-all {
+  margin-top: 40px;
+}
+.wrapper-all > .row > .sidebar > .filter > .filter-text {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.wrapper-all > .row > .sidebar > .filter > .filter-search {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper-all > .row > .sidebar > .filter > .filter-search > .btn-primary {
+  background-color: #ec0072;
+  border-color: #ca2c79;
+  width: 100%;
+}
+.wrapper-all > .row > .sidebar > .filter > .filter-search > .btn-primary:hover {
+  background-color: #ca2c79;
+}
+.wrapper-all > .row > .sidebar > .filter > .price-tours {
+  margin-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+.wrapper-all > .row > .sidebar > .filter > .price-tours > .check-price > label {
+  font-weight: 400;
+}
+.wrapper-all > .row > .sidebar > .filter > .price-tours .container-price {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrapper-all > .row > .sidebar > .filter > .price-tours .container-price input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.wrapper-all > .row > .sidebar > .filter > .price-tours .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.wrapper-all > .row > .sidebar > .filter > .price-tours .container-price:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.wrapper-all > .row > .sidebar > .filter > .price-tours .container-price input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.wrapper-all > .row > .sidebar > .filter > .price-tours .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.wrapper-all > .row > .sidebar > .filter > .price-tours .container-price input:checked ~ .checkmark:after {
+  display: block;
+}
+.wrapper-all > .row > .sidebar > .filter > .price-tours .container-price .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.wrapper-all > .row > .sidebar > .filter > .place {
+  margin-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper-all > .row > .sidebar > .filter > .place > .dropdown {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+}
+.wrapper-all > .row > .sidebar > .filter > .place > .dropdown > .dropdown-select {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.5rem;
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.wrapper-all > .row > .sidebar > .filter > .place > .dropdown > .dropdown-select * {
+  pointer-events: none;
+}
+.wrapper-all > .row > .sidebar > .filter > .place > .dropdown > .dropdown-select > .dropdown-caret {
+  color: #ec0072;
+}
+.wrapper-all > .row > .sidebar > .filter > .place > .dropdown > .dropdown-list {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: none;
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+  z-index: 1;
+}
+.wrapper-all > .row > .sidebar > .filter > .place > .dropdown > .dropdown-list::before {
+  content: "";
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.wrapper-all > .row > .sidebar > .filter > .place > .dropdown > .dropdown-list.show {
+  display: block;
+}
+.wrapper-all > .row > .sidebar > .filter > .place > .dropdown > .dropdown-list > .dropdown-item {
+  padding: 1.5rem;
+  color: #47536b;
+  transition: all 0.25s ease;
+  border-radius: 8px;
+  cursor: pointer;
+  list-style: none;
+}
+.wrapper-all > .row > .sidebar > .filter > .place > .dropdown > .dropdown-list > .dropdown-item:hover {
+  color: #33ccff;
+  background-color: #f1fbff;
+}
+.wrapper-all > .row > .sidebar > .filter > .rating {
+  margin-top: 40px;
+}
+.wrapper-all > .row > .sidebar > .filter > .rating > .rating-box {
+  padding-top: 20px;
+}
+.wrapper-all > .row > .sidebar > .filter > .rating > .rating-box > .row {
+  margin-bottom: 20px;
+}
+.wrapper-all > .row > .sidebar > .filter > .rating > .rating-box > a > .stars:hover {
+  background-color: papayawhip;
+}
+.wrapper-all > .row > .sidebar > .filter > .rating .checked {
+  color: orange;
+  font-size: 32px;
+}
+.wrapper-all > .row > .sidebar > .filter > .rating .text-star {
+  line-height: 32px;
+  font-size: 18px;
+}
+.wrapper-all > .row > .tours_list > .wrapper-tours {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.wrapper-all > .row > .tours_list > .wrapper-tours > .tour-card {
+  border-radius: 20px 20px 5px 5px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: calc(33.3333333333% - 45px);
+  margin-bottom: 30px;
+}
+.wrapper-all > .row > .tours_list > .wrapper-tours > .tour-card > a > .card-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 0 0;
+  flex-shrink: 0;
+}
+.wrapper-all > .row > .tours_list > .wrapper-tours > .tour-card > .card-content {
+  height: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-all > .row > .tours_list > .wrapper-tours > .tour-card > .card-content > .card-top {
+  padding: 10px;
+}
+.wrapper-all > .row > .tours_list > .wrapper-tours > .tour-card > .card-content > .card-top > .card-title {
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.wrapper-all > .row > .tours_list > .wrapper-tours > .tour-card > .card-content > .card-top > .card-place {
+  color: #999;
+}
+.wrapper-all > .row > .tours_list > .wrapper-tours > .tour-card > .card-content > .card-top > .card-title, .wrapper-all > .row > .tours_list > .wrapper-tours > .tour-card > .card-content > .card-top > .card-place {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.wrapper-all > .row > .tours_list > .wrapper-tours > .tour-card > .card-content > .card-footer {
+  padding: 10px;
+  border-top: 1px dashed #eee;
+  position: relative;
+  margin-top: auto;
+}
+.wrapper-all > .row > .tours_list > .wrapper-tours > .tour-card > .card-content > .card-footer > .btn-primary {
+  float: right;
+  position: absolute;
+  right: 5%;
+  bottom: 7%;
+  background-color: #ec0072;
+  border-color: #ec0072;
+  transition: background-color 0.3s ease;
+}
+.wrapper-all > .row > .tours_list > .wrapper-tours > .tour-card > .card-content > .card-footer > .btn-primary:hover {
+  background-color: #eb4193;
+}
+.wrapper-all > .row > .tours_list > .pagination {
+  display: inline-block;
+  height: 70px;
+  margin-top: 70px;
+  padding: 0 25px;
+  border-radius: 35px;
+  background-color: #eee;
+  float: right;
+}
+.wrapper-all > .row > .tours_list > .pagination > .page-numbers {
+  display: block;
+  padding: 0 25px;
+  float: left;
+  transition: 400ms ease;
+  color: #595959;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  line-height: 70px;
+}
+.wrapper-all > .row > .tours_list > .pagination > .page-numbers:hover, .wrapper-all > .row > .tours_list > .pagination > .page-numbers.current {
+  background-color: #86c023;
+  color: #fff;
+}
+.wrapper-all > .row > .tours_list > .pagination > .page-numbers.prev:hover, .wrapper-all > .row > .tours_list > .pagination > .page-numbers.next:hover {
+  background-color: transparent;
+  color: #86c023;
+}
+.wrapper-all > .row > .tours_list > .pagination > .page-numbers:nth-child(-n+3), .wrapper-all > .row > .tours_list > .pagination > .page-numbers:nth-last-child(-n+3) {
+  display: block;
+}
+.wrapper-all > .row > .tours_list > .pagination > .page-numbers:nth-last-child(-n+4) {
+  padding-right: 14px;
+}
+.wrapper-all > .row > .tours_list > .pagination > .page-numbers:nth-last-child(-n+4)::after {
+  content: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-image {
+    object-fit: cover;
+  }
+
+  .wrapper-tours > .tour-card {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+

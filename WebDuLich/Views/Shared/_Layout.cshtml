@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Đặt tour du lịch</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/6ec544477c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/Content/css/header.css" media="all" />
+    <link rel="stylesheet" href="~/Content/css/footer.css" media="all" />
+
+</head>
+<body>
+
+    <!-- Header & Chat Pop-up-->
+    <div id="header">
+        <!-- Header -->
+        <div class="container-fluid sub_header">
+            <div class="container">
+                <!-- Logo -->
+                <div class="logo">
+                    <li><a href="https://www.facebook.com/mytour.vn" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="https://www.instagram.com/vietnamtourismboard/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="call"></ion-icon><span style="font-size: 18px" ;>0.69 69 69</span></a></li>
+                </div>
+
+                <!-- Login/Register -->
+                <div class="log_reg">
+                    <!-- Login -->
+                    <li><a href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <!-- Modal Login -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <img src="img/footer/logo-mytour-award.png" alt="" style="height: 46px">
+                                    <h2 style="display: inline-block; padding-left: 75px">Đăng Nhập</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="usr" placeholder=" ">
+                                            <label for="usr">Tài khoản</label>
+                                            <i class="far fa-envelope field-icon" style="width: 0;"></i>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="id_password" placeholder=" ">
+                                            <label for="password-field">Mật khẩu</label>
+                                            <span>
+                                                <i class="far fa-eye" id="togglePassword" style="position: absolute; top: 40%; right: 3%;
+                                       cursor: pointer;"></i>
+                                                <!-- Script Show/Hide password -->
+                                                <script>
+                                                    const togglePassword = document.querySelector('#togglePassword');
+                                                    const password = document.querySelector('#id_password');
+                                                    togglePassword.addEventListener('click', function (e) {
+                                                        // toggle the type attribute
+                                                        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                                                        password.setAttribute('type', type);
+                                                        // toggle the eye slash icon
+                                                        this.classList.toggle('fa-eye-slash');
+                                                    });
+                                                </script>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer" style="text-align: center">
+                                    <button class="btn" id="myBtn" onclick="javascript:alert('Hello World!')">Đăng Nhập</button>
+                                    <p class="text-center">Nếu chưa có tài khoản, <i><a href="#" style="color: #fa2886">Đăng ký</a></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Modal -->
+                    <!-- Register -->
+                    <li><a href="" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
+                    <!-- Modal Register -->
+                    <div class="modal fade" id="myModal1" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <img src="~/Content/img/tour/logo-mytour-award.png" alt="" style="height: 46px">
+                                    <h2 style="display: inline-block; padding-left: 75px">Đăng Ký</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" placeholder=" ">
+                                            <label for="name">Họ và tên</label>
+                                            <i class="far fa-user field-icon"></i>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" placeholder=" ">
+                                            <label for="email">Địa chỉ email</label>
+                                            <i class="far fa-envelope field-icon"></i>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" id="sdt" placeholder=" ">
+                                            <label for="sdt">Số điện thoại</label>
+                                            <i class="fas fa-phone field-icon"></i>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="id_password1" placeholder=" ">
+                                            <label for="password-field">Mật khẩu</label>
+                                            <span>
+                                                <i class="far fa-eye" id="togglePassword1" style="position: absolute; top: 40%; right: 5%;
+                                       cursor: pointer;"></i>
+                                                <!-- Script Show/Hide password -->
+                                                <script>
+                                                    const togglePassword1 = document.querySelector('#togglePassword1');
+                                                    const password1 = document.querySelector('#id_password1');
+                                                    togglePassword1.addEventListener('click', function (e) {
+                                                        // toggle the type attribute
+                                                        const type = password1.getAttribute('type') === 'password' ? 'text' : 'password';
+                                                        password1.setAttribute('type', type);
+                                                        // toggle the eye slash icon
+                                                        this.classList.toggle('fa-eye-slash');
+                                                    });
+                                                </script>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer" style="text-align: center">
+                                    <button class="btn" id="myBtn" onclick="javascript:alert('Hello World!')">Đăng Ký</button>
+                                    <p class="text-center">Nếu đã có tài khoản, <i><a href="#" style="color: #fa2886">Đăng nhập</a></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Modal -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="container navigation">
+            <!-- Nav pc -->
+            <li><a href="@Url.Action("TrangChu", "Home")"><img src="~/Content/img/tour/logo-mytour-award.png" style="height: 46px;" alt="" /></a></li>
+            <ul class="nav">
+                <li><a href="@Url.Action("Tours", "Home")">Tour</a></li>
+                <li><a href="@Url.Action("CamNang", "Home")">Cẩm Nang Du Lịch</a></li>
+                <li><a href="@Url.Action("GioiThieu", "Home")">Giới thiệu</a></li>
+                <li><a href="@Url.Action("HoiDap", "Home")">Hỏi Đáp</a></li>
+            </ul>
+            <button class="join" data-toggle="modal" data-target="#myModal3">Trở thành nhà cung cấp</button>
+
+            <!-- Pop-up Join -->
+            <!-- Modal -->
+            <div class="modal fade" id="myModal3" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <img src="~/Content/img/tour/logo-mytour-award.png" alt="" style="height: 46px">
+                            <h2 style="display: inline-block; padding-left: 75px">Đăng ký trở thành nhà cung cấp</h2>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name_cpn" placeholder=" ">
+                                    <label for="usr">Tên công ty</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name_officer" placeholder=" ">
+                                    <label for="password-field">Tên liên lạc viên</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder=" ">
+                                    <label for="password-field">Địa chỉ email</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="phone_number" placeholder=" ">
+                                    <label for="password-field">Số điện thoại</label>
+                                </div>
+                                <div class="form-group">
+                                    <!-- <input type="password" class="form-control" id="id_password" placeholder=" ">
+                                    <label for="password-field">Dịch vụ</label> -->
+                                    <select class="form-control" id="sel1">
+                                        <option>Địa Điểm Tổ Chức Sự Kiện, Tiệc Cưới, Hội Nghị</option>
+                                        <option>Gói Âm Thanh, Ánh Sáng và Màn Hình LED</option>
+                                        <option>Gói MC Dẫn Chương Trình và Game Sân Khấu</option>
+                                        <option>Gói Quay Chụp Sự Kiện</option>
+                                        <option>Gói Teambuilding Doanh Nghiệp và Học Sinh</option>
+                                        <option>Gói Teambuilding Amazing Race</option>
+                                    </select>
+                                    <label for="sel1">Dịch vụ</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer" style="text-align: center">
+                            <button class="btn" id="myBtn" onclick="javascript:alert('Hello World!')">Gửi yêu cầu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
+            <!-- Sidebar responsive -->
+            <label for="nav-mobile-input" class="nav_bars-btn">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+            </label>
+            <input type="checkbox" hidden name="" class="nav_input" id="nav-mobile-input">
+            <label for="nav-mobile-input" class="nav_overlay"></label>
+            <nav class="nav_mobile">
+                <div class="head-nav">
+                    <img src="~/Content/img/tour/logo-mytour-award.png" alt="">
+                    <label for="nav-mobile-input">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                    </label>
+                </div>
+                <ul class="nav_mobile-list">
+                    <li><a href="Tour.html">Tours</a></li>
+                    <li><a href="CamNang.html">Cẩm nang du lịch</a></li>
+                    <li><a href="GioiThieu.html">Giới thiệu</a></li>
+                    <li><a href="HoiDap.html">Hỏi đáp</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Chat -->
+        <button class="open-button" onclick="openForm()"><ion-icon name="chatbubbles"></ion-icon></button>
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Chat</h1>
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+    </div>
+
+    <!-- Content -->
+    <div class="body-content">
+            @RenderBody()
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+
+        <div class="container cuoitrang">
+            <div class="col-md-3 a col-sm-12">
+                <img src="~/Content/img/footer/logo-footer.jpg" alt="logo">
+                <p>Một sản phẩm của Mytour.vn</p>
+            </div>
+            <div class="col-md-3 a col-sm-4">
+                <ul>
+                    <li><strong>DỊCH VỤ</strong></li>
+                    <li>Sự kiện</li>
+                    <li>Tour</li>
+                </ul>
+            </div>
+            <div class="col-md-3 a col-sm-4">
+                <ul>
+                    <li><strong>VỀ CHÚNG TÔI</strong></li>
+                    <li>Mytour.vn</li>
+                    <li>Mytourevent</li>
+                </ul>
+            </div>
+            <div class="col-md-3 a col-sm-4">
+                <ul>
+                    <li><strong>LIÊN HỆ</strong></li>
+                    <li>1900 2083</li>
+                    <li>event@mytour.vn</li>
+                    <li>Văn Phòng: Tầng 11 tòa nhà Peak View, 36 Hoàng Cầu, Đống Đa, Hà Nội</li>
+                    <li>Showroom: 168 Xã Đàn, Phương Liên, Đống Đa, Hà Nội</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="e">
+                <p>Mytour là thành viên của VNTravel Group, một trong những tập đoàn đứng đầu Đông Nam Á về du lịch trực tuyến và các dịch vụ liên quan</p>
+            </div>
+            <div class="f">
+                <img src="~/Content/img/footer/pic-cuoi.jpg" alt="logo_nhacungcap">
+            </div>
+        </div>
+        <!-- End Footer -->
+
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

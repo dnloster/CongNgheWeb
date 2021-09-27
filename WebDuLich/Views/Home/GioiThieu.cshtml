@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Giới Thiệu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/css/gioithieu.css" media="all" />
+
+<div class="container-fluid banner" style="padding: 0;">
+    <!-- content -->
+    <div class="container">
+        <div class="row" id="mn">
+            <div class="col-md-3">
+                @Html.Partial("sideBar")
+                <style>
+                    .banner .row .col-md-3 .nav li:first-child a{
+                        color:orange!important;
+                        font-weight: bold
+                    }
+                </style>
+            </div>
+            <div class="col-md-9">
+                <h1 style="color: orange;">Giới thiệu về Mytour.vn</h1><br />
+                <p>Với sứ mệnh đem lại trải nghiệm du lịch hoàn hảo cho khách hàng, Mytour Việt Nam chuyên cung cấp dịch vụ đặt phòng khách sạn trực tuyến cũng như đặt tour du lịch thú vị, hấp dẫn với mức giá ưu đãi cao, giúp bạn chọn lựa và lên kế hoạch cho chuyến du lịch của mình.</p>
+                <p>Với hệ thống đặt phòng trực tuyến tại website: http://mytour.vn, cùng các chức năng hỗ trợ khách hàng chọn lựa như Tìm kiếm phòng trống, Tìm khách sạn đang có khuyến mãi, Tìm khách sạn giá rẻ và đội ngũ nhân viên Hỗ trợ đặt phòng trực tuyến, sẽ giúp khách hàng đặt phòng khách sạn và đặt tour du lịch dễ hơn bao giờ hết.</p>
+                <h3>Giới thiệu chung về Mytour</h3>
+                <p>Công ty TNHH Mytour Việt Nam là công ty chuyên cung cấp dịch vụ đặt phòng khách sạn, đặt vé máy bay và đặt tour du lịch, với mức giá hấp dẫn, hình thức thanh toán linh hoạt. Đặc biệt, Mytour luôn có chính sách ưu đã riêng cho các tổ chức doanh nghiệp.</p>
+                <p>Với những bước phát triển đáng kinh ngạc trong thời gian vừa qua, hiện nay Mytour đã trở thành công ty được nhiều khách hàng tin tưởng với 2 văn phòng tại Hà Nội và Thành phố Hồ Chí Minh, cùng với đội ngũ nhân viên nhiệt tình, thân thiện.</p>
+                <h3>Tại sao lựa chọn Mytour?</h3>
+                <p>Giá tốt hơn so với đặt phòng trực tuyến tại khách sạn.<br />Đảm bảo giá tốt nhất.<br />Đảm bảo hoàn tiền.<br />Nhân viên tư vấn nhiều kinh nghiệm.<br />Hơn 5000 khách sạn tại Việt Nam với nhiều đánh giá thực.<br />Nhiều chương trình khuyến mãi và tích lũy điểm.<br />Thanh toán dễ dàng, đa dạng.</p>
+                <br /><br />
+            </div>
+        </div>
+    </div>
+</div>
+

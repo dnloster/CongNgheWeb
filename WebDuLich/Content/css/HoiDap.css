@@ -1,0 +1,125 @@
+@charset "UTF-8";
+* {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* zoom khi hover */
+.content {
+  padding: 20px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 2px;
+}
+
+.img-container {
+  border: 1px solid #CCC;
+  height: auto;
+  /** Chiều cao tự động **/
+  margin: 0;
+  /** Cách trên dưới 10px và nằm giữa **/
+  overflow: hidden;
+  /** DÒNG BẮT BUỘC CÓ **/
+  position: relative;
+  width: 100%;
+  /** Chiều rộng vùng chứa **/
+}
+
+.img-container img {
+  cursor: pointer;
+  width: 100%;
+  /** Hình ảnh rộng 100% so với vùng chứa **/
+  transition: all 1s;
+  /** Tạo độ mượt **/
+}
+
+.img-container:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* end zoom khi hover */
+
+.khung {
+  height: 100%;
+  padding: 0;
+}
+.khung > .chua {
+  position: relative;
+  height: 100%;
+  margin: 40px 40px 0px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(247, 231, 238);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.khung > .chua >.img-content {
+  padding: 8px 8px 40px 8px;
+  background-color: rgb(247, 231, 238);
+}
+
+.khung > .chua >.img-content>p{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  margin-bottom: 15px;
+}
+.khung > .chua  .btn {
+  position: absolute;
+  bottom: 5px;
+  width: 90%;
+  margin: 0 5%;
+  /* margin-bottom: 50px; */
+  border: 1px solid #FF9F00;
+  color: white;
+  background-color: #FF9F00;
+}
+
+@media only screen and (max-width: 1200px) {
+  .khung {
+    width: 33.3332% !important;
+    float: left;
+  }
+  .khung{
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .khung {
+    width: 33.3332% !important;
+    float: left;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .khung {
+    width: 50% !important;
+    float: left;
+  }
+
+  .img-content p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .khung {
+    width: 100% !important;
+    float: left;
+    display: block;
+    margin:0;
+  }
+  a.btn {
+    display: none;
+  }
+  .chua .img-content {
+    background-color: white;
+  }
+  .content {
+    padding-left: 0px !important; 
+    padding-right: 0px !important;
+  }
+}
+
+

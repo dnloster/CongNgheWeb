@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewBag.Title = "Khuyến Mãi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/css/CamNang.css" media="all" />
+
+<!--Body for CamNang.html-->
+<div class="body-content">
+    <div class="container" style="padding: 0;margin-bottom: 20px;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="@Url.Action("KhuyenMai", "CamNang")">
+                        <img src="~/Content/img/CamNang/Bamboo-Airways-ivivu-12.jpg" alt="" style="width:100%; height:600px; object-fit: cover; filter: brightness(70%)">
+                        <div class="carousel-caption">
+                            <h1 style="font-weight:bold;font-family: 'Roboto Slab',Palatino,Cambria,'Droid Serif',Georgia,'Times New Roman',Times,serif;">Khuyến Mãi</h1>
+                            <!--h1 style="font-weight:bold" >ƯU ĐÃI THÁNG 10 SIÊU HẤP DẪN TỪ MYTOUR.VN</h1-->
+                            <h4 style="text-transform: none;">Những khuyến mại hấp dấn từ Mytour.vn</h4>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="item">
+                    <img src="~/Content/img/CamNang/DiemDen2.jpg" alt="" style="width:100%; height:600px; object-fit: cover; filter: brightness(80%)">
+                    <div class="carousel-caption">
+                        <h1 style="font-weight:bold;font-family: 'Roboto Slab',Palatino,Cambria,'Droid Serif',Georgia,'Times New Roman',Times,serif;">Điểm Đến</h1>
+                        <h4 style="text-transform: none">Những địa điểm du lịch đầy thu hút mà bạn không thể bỏ qua!</h4>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="~/Content/img/CamNang/AmThuc3.jpg" alt="" style="width:100%; height:600px; object-fit: cover; filter: brightness(80%)">
+                    <div class="carousel-caption">
+                        <h1 style="font-weight:bold; font-family: 'Roboto Slab',Palatino,Cambria,'Droid Serif',Georgia,'Times New Roman',Times,serif;">Ẩm thực</h1>
+                        <h4 style="text-transform: none">Ẩm thực Việt Nam và thế giới vô cùng phong phú!</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/Content/img/CamNang/MeoDL.jpg" alt="" style="width:100%; height:600px; object-fit: cover; filter: brightness(80%)">
+                    <div class="carousel-caption">
+                        <h1 style="font-weight:bold; font-family: 'Roboto Slab',Palatino,Cambria,'Droid Serif',Georgia,'Times New Roman',Times,serif;">Mẹo Du lịch</h1>
+                        <h4 style="text-transform: none">Hãy note lại ngay những mẹo du lịch siêu tiết kiệm!</4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+        <!-- Actual search box -->
+
+        <div class="container" style="padding: 0; position: relative;height: 75px;">
+            <ul class="breadcrumb" style="padding: 0;">
+                <li><a href="@Url.Action("TrangChu", "Home")">Trang chủ</a></li>
+                <li><a href="@Url.Action("CamNang", "Home")">Cẩm nang du lịch</a></li>
+                <li>Khuyến mãi</li>
+            </ul>
+            <div class="main">
+                <div class="form-group has-feedback has-search" style="margin-bottom: 0px">
+                    <span class="glyphicon glyphicon-search form-control-feedback" style="color:black"></span>
+                    <input type="text" class="form-control" placeholder="Tìm kiếm bài viết">
+                </div>
+            </div>
+        </div>
+
+        <!--Khuyến Mãi-->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card" style="margin-top:20px; border-style: none none solid none;">
+                    <img src="~/Content/img/CamNang/KhuyenMai2.png" class="card-img-top" alt="" style="width: 100%; object-fit: cover">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-weight: bold;font-size: 20px; font-family: 'Roboto Slab',Palatino,Cambria,'Droid Serif',Georgia,'Times New Roman',Times,serif;">DU LỊCH CÓ NHAU NHẬN NGAY DOUBLE ƯU ĐÃI ĐẾN TỪ MYTOUR</h4>
+                        <h6 style="color:rgb(170, 169, 169);">15/09/2021   -   633 VIEWS</h6>
+                        <p class="card-text">Đi gần cũng được, đi xa cũng được, miễn là đi cùng nhau. Hãy cùng những người yêu thương sóng bước đồng hành khám phá những điều tuyệt diệu của thế giới, Mytour góp vui hành trình cùng song trùng khuyến mãi siêu hot...</p>
+
+                    </div>
+                </div>
+                <div class="card" style="margin-top:20px; border-style: none none solid none;">
+                    <img src="~/Content/img/CamNang/bamboo_airways.png" class="card-img-top" alt="" style="width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-weight: bold;font-size: 20px; font-family: 'Roboto Slab',Palatino,Cambria,'Droid Serif',Georgia,'Times New Roman',Times,serif;">BAMBOO AIRWAYS TUNG LOẠT ƯU ĐÃI MỪNG SINH NHẬT VÀ LỄ QUỐC KHÁNH 2/9</h4>
+                        <h6 style="color:rgb(170, 169, 169);">20/09/2021   -   633 VIEWS</h6>
+                        <p class="card-text">Mừng sinh nhật và nhân dịp lễ Quốc Khánh 2/9, hãng hàng không Bamboo Airways tung ra hàng loại ưu đãi bất ngờ...</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card" style="margin-top:20px; border-style: none none solid none;">
+                    <img src="~/Content/img/CamNang/canada.png" class="card-img-top" alt="" style="width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-weight: bold;font-size: 20px; font-family: 'Roboto Slab',Palatino,Cambria,'Droid Serif',Georgia,'Times New Roman',Times,serif;">NHỮNG ĐIỀU CẦN BIẾT KHI MUA VÉ MÁY BAY CANADA TỪ VIỆT NAM</h4>
+                        <h6 style="color:rgb(170, 169, 169);">04/08/2021   -   633 VIEWS</h6>
+                        <p class="card-text">Hãy cùng Mytour.vn tìm hiểu các thông tin cần thiết khi mua vé máy bay Canada để chuẩn bị cho mình một chuyến đi trọn vẹn đến đất nước xinh đẹp này nhé.</p>
+
+                    </div>
+                </div>
+                <div class="card" style="margin-top:20px; border-style: none none solid none;">
+                    <img src="~/Content/img/CamNang/khach_san_sg.png" class="card-img-top" alt="" style="width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-weight: bold;font-size: 20px; font-family: 'Roboto Slab',Palatino,Cambria,'Droid Serif',Georgia,'Times New Roman',Times,serif;">DANH SÁCH NHỮNG KHÁCH SẠN SÀI GÒN CÁCH LY CÓ THU PHÍ BẠN CÓ THỂ LỰA CHỌN</h4>
+                        <h6 style="color:rgb(170, 169, 169);">02/08/2021   -   633 VIEWS</h6>
+                        <p class="card-text">Nhằm giải quyết phần nào tình trạng quá tải tại các khu cách ly tập trung hiện nay, Mytour.vn gợi ý danh sách những khách sạn Sài Gòn cách ly có thu phí bạn có thể lựa chọn dưới đây.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+    </div>
+</div>
+
